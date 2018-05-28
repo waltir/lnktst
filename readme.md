@@ -16,10 +16,10 @@ yarn run build:dev - Builds for dev env
 yarn run test - Runs all of our JEST unit tests  
 node server/server.js - Starts Express server, however, you might need to 'yarn run build:prod' beforehand  
 
-# INSTALLING DEPENDANCIES
+# INSTALLING DEPENDENCIES
 yarn install : installs everything  
-yarn install --production : only installs production dependancies  
-yarn install --development : installs production and dev dependancies  
+yarn install --production : only installs production dependencies  
+yarn install --development : installs production and dev dependencies  
 
 # DEPLOY TO HEROKU USING HEROKU CLI AND THE TERMINAL
 heroku --version : check heroku cli version  
