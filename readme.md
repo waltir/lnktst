@@ -1,12 +1,13 @@
 # GIT COMMANDS
-git init - Create a new repo  
-git status - View the changes to your project code  
-git add - Add files to staging area  
-git commit - Creates a new commit with files from staging area  
-git log - View recent commits  
-git add . - Adds all recent changes to commit  
-git commit -m "Commit message goes here" - Add a commit message  
-git push - Pushes code to the default remote which is likely origin  
+**git init** - Create a new repo  
+**git status** - View the changes to your project code  
+**git add** - Add files to staging area  
+**git commit** - Creates a new commit with files from staging area  
+**git log** - View recent commits  
+**git add .** - Adds all recent changes to commit  
+**git commit -m "Commit message goes here"** - Add a commit message  
+**git commit -a -m "Commit message goes here"** - Commit all recent changes along with a commit message
+**git push** - Pushes code to the default remote which is likely origin  
 
 # SERVER COMMANDS
 **npm run serve** - Starts live server running on public folder - The following must be added back to package.json scripts to use **live server** - "serve": "live-server public/"  
