@@ -31,3 +31,6 @@
 **git push heroku master** - Pushes the app to master  
 **heroku open** - Opens the app in the browser  
 **heroku logs** - Dumps all of the server logs into the terminal  
+**heroku config** - Prints out all of your enviornment variables   
+**heroku config:set KEY=value** - Adds a new enviornment variable  
+**heroku config:unset KEY** - Removes the enviornment variable  
