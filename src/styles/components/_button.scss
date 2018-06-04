@@ -1,0 +1,18 @@
+.button{
+    background: $blue;
+    padding: $s-size $l-size;
+    color: white;
+    font-weight:100;
+    border:none;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+}
+.button:hover{
+    background: darken($blue, 10%);
+    transition: background .3s ease-in-out;
+}
+
+.button--secondary{
+    background: #888;
+}

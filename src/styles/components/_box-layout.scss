@@ -1,0 +1,35 @@
+.box-layout{
+    align-items: center; 
+    background: linear-gradient(
+        rgba(100, 216, 245, 0.85), 
+        rgba(0, 255, 191, 0.45)
+      ),url('https://source.unsplash.com/2000x1500/?finance');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.box-layout__box{
+    background: fade-out(white, .20);
+    border-radius: 10px;
+    text-align: center;
+    width: 30rem;
+    padding: $xl-size $xl-size;
+    box-shadow: 0px 0px 40px 10px rgba(0, 105, 131, 0.589);
+}
+
+.box-layout__title{
+    margin: 0 0 $m-size 0;
+    line-height: 1;
+    font-weight:100;
+    letter-spacing: 0px;
+}
+.box-layout__paragraph{
+    font-weight:100;
+    letter-spacing: 2px;
+    font-size:15px;
+}
