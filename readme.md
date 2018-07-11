@@ -6,7 +6,7 @@
 **git log** - View recent commits  
 **git add .** - Adds all recent changes to commit  
 **git commit -m "Commit message goes here"** - Add a commit message  
-**git commit -a -m "Commit message goes here"** - Commit all recent changes along with a commit message
+**git commit -a -m "Commit message goes here"** - Commit all recent changes along with a commit message 
 **git push** - Pushes code to the default remote which is likely origin  
 
 # SERVER COMMANDS
