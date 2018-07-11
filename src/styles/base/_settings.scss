@@ -1,10 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&subset=cyrillic');
+
+
 // Colors
 $dark-grey: #333333;
 $dark-blue: #364051;
-$blue: #1c88bf;
+$blue: hsl(200, 74%, 43%);
 $off-white: #f7f7f7;
 $grey: #666;
-
+$gradient: linear-gradient(to right,
+    rgba(98, 214, 216, 0.822), 
+    rgba(2, 127, 185, 0.471)
+    );
+$grayscale-gradient: linear-gradient(to right,
+    rgba(32, 32, 32, 0.622), 
+    rgba(0, 0, 0, 0.771)
+    );
+$video-gradient: linear-gradient(to right,
+    rgba(114, 125, 150, 0.622), 
+    rgba(59, 73, 88, 0.871)
+    );
+$teal: rgba(2, 127, 185, 0.671);
+$teal-solid: rgb(7, 126, 182);
+$blue-solid: rgb(49, 54, 63);
 $font-size-small: 1.4rem;
 
 // Spacing
@@ -13,3 +31,8 @@ $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 $desktop-breakpoint: 45rem;
+
+.paragraph{
+    font-weight: 100;
+    font-size: 12px;
+}

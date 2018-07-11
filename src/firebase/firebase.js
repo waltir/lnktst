@@ -16,6 +16,20 @@ var config = {
 
 export { firebase, googleAuthProvider, database as default };
 
+ 
+// export const remove = (uid) => ({
+//   database.ref('relations/isSingle')
+//   .remove()
+//   .then(() => {
+//       console.log('Relationship status was removed from DB')
+//   }).catch((e) => {
+//       console.log('There was an error', e)
+//   })
+// });
+
+
+
+
 
 // // CHILD_REMOVED
 // database.ref('expenses').on('child_removed', (snapshot) => {

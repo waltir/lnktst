@@ -1,0 +1,64 @@
+.DateInput__display-text{
+    font-size: 12px;
+    font-weight:100;
+}
+
+.DateInput__input:active {
+    border: 1px solid $grey;
+    border-radius: 0px;
+    font-size: 13px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.DateInput__display-text--focused{
+    background: $teal;
+    border-color: $teal;
+    color: white;
+    border: 1px solid $teal;
+    border-radius: 0px;
+}
+.CalendarDay--selected-span{
+    background: lighten($teal, 15%);
+    border-color: $teal;
+    color: white;
+}
+.CalendarDay--selected-span:hover{
+    background: lighten($teal, 15%);
+    border-color: $teal;
+    color: white;
+}
+.CalendarDay--hovered-span{
+    background: lighten($teal, 10%);
+    border-color: $teal;
+    color: white;
+}
+.CalendarDay--selected-start, .CalendarDay--selected-end, .CalendarDay--selected{
+    background: $teal;
+    border-color: $teal;
+    color: white;
+}
+.CalendarDay__button:hover{
+    background: darken($teal, 5%);
+    border-color: $teal;
+    color: white;
+}
+.CalendarDay__button:active{
+    background: $teal;
+    border-color: $teal;
+    color: white;
+}
+
+.DayPickerKeyboardShortcuts__show--bottom-right{
+    border-top: 38px solid transparent;
+    border-right: 38px solid $teal;
+    color: $off-white;
+    font-size: 12px;
+}
+.DayPickerKeyboardShortcuts__show--bottom-right span{
+    padding-bottom: 4px;
+    margin-right:0px;
+}
+.DayPickerKeyboardShortcuts__show--bottom-right:hover{
+    border-top: 38px solid transparent;
+    border-right: 38px solid darken($teal, 5%);
+}

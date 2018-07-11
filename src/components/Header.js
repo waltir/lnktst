@@ -2,25 +2,30 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
+import ResponsiveMenu from 'react-responsive-navbar';
 
 export const Header = ({startLogout}) => (
-  <header className="header">
-    <div className="content-container">
-      <div className="header__content">
-        <Link className="header__title" to="/dashboard"><h1>Expensify</h1></Link>
-        <span>
-        <Link className="header__help" to="/help">FAQs</Link>
-        <button className="button" onClick={startLogout}>Logout</button>
-        </span>
-      </div>
+  <div className="header-container">
+    <div className="header__content content-container">
+      <Link className="header__title" to="/"><h1>LnkTst</h1></Link>
+      <ResponsiveMenu
+        menuOpenButton={<i class="fa fa-bars"></i>}
+        menuCloseButton={<i class="fa fa-times"></i>}
+        changeMenuOn="700px"
+        largeMenuClassName="large-menu-classname"
+        smallMenuClassName="small-menu-classname"
+        menu={
+          <ul>
+            <Link className="header__help" to="/profile">Profile</Link>
+            <button className="header-button" onClick={startLogout}>Logout</button>
+          </ul>
+        }
+      />
     </div>
-  </header>
+  </div>
 );
 
 const mapDispatchToProps = (dispatch) => ({
   startLogout: () => dispatch(startLogout())
 });
 export default connect(undefined, mapDispatchToProps)(Header);
-
-// <NavLink to="/create" activeClassName="is-active">Create Expense</NavLink>
-// <NavLink to="/help" activeClassName="is-active">Help</NavLink>

@@ -1,0 +1,142 @@
+.home-container{
+    background-color: white !important;
+    position: absolute;
+    z-index: 5;
+  }
+  .home-row{
+    margin: 0 auto;
+  
+    // display: flex;
+    // // flex-wrap: wrap;
+    padding: $xl-size;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    // height:100vh;
+    max-width: 97rem;
+    display: grid;
+          grid-template-columns: repeat(auto-fill,minmax(360px, 1fr));
+  }
+  .home-row__items{
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button, input, optgroup, select, textarea{
+    font-size: 12px;
+  }
+
+  
+.screenshot1{
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    // background-image: url("./iPhone8.png");
+    max-width: 300px;
+    max-height: 450px;
+    height: auto;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+[class*="col-"]{
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+#homePageVideo__video_overlays {
+  position:absolute;
+  float:left;
+  width:50%;
+  min-height:100%;
+  background: $gradient;
+  z-index:2;
+  object-fit: cover;
+  background-size: cover;
+  min-height:100vw !important;
+  min-width: 50vw;
+  // top: 0;
+  margin-left: -8px;
+}
+
+#homePageVideo {
+  position: fixed;
+  z-index: 0;
+  justify-content: center;
+  overflow: hidden !important;
+  opacity: 100%;
+  // margin-top: 25px;
+
+  width:50% !important;
+  min-height:100vh;
+  object-fit: cover;
+  background-size: cover;
+  max-height:100vh !important;
+  min-width: 50vw;
+}
+
+video {
+  object-fit: cover;
+  max-height:50vw !important;
+  max-width: 50vw;
+  overflow: hidden !important;
+}
+
+.info__cell1{
+  background-color: darken($color: $blue-solid, $amount: 5);
+  color: white;
+}
+.img-home1{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.info__cell2{
+  background: $video-gradient;
+  color: white;
+}
+
+
+.home__paragraph{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+}
+.home__h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  text-align: center;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: $video-gradient;
+
+}
+.img-text-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 700;
+}
+.img-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 700;
+}

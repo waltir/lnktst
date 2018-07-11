@@ -1,5 +1,24 @@
 .content-container{
     margin: 0 auto;
     padding: 0 $m-size;
-    max-width: 80rem;
+    max-width: 90rem;
+}
+
+.item-group {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    & h1 {
+        padding: 0 $l-size;
+    }
+    & Link {
+        padding: 0 $l-size;
+    }
+}
+
+.item__contents {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
 }

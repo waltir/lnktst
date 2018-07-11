@@ -1,14 +1,18 @@
 .list-header{
-    background: $off-white;
-    border: 1px solid darken($off-white, 7%);
-    color: $grey;
+    background: $gradient;
+    border: 0px solid darken($off-white, 7%);
+    color: white;
     display:flex;
     justify-content: space-between;
     padding: $s-size $m-size;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 13px;
 }
 
 .list-body {
-    margin-bottom: $m-size;
+    margin-bottom: $xl-size;
+    padding-bottom: 100px;
     @media (min-width: $desktop-breakpoint){
         margin-bottom: $xl-size;
     }
@@ -34,6 +38,10 @@
         align-items:center;
     }
 }
+a {
+    text-decoration: none !important;
+    color: $dark-grey;
+}
 
 .list-item--message{
     align-items: center;
@@ -45,20 +53,94 @@
     }
 }
 
-.list-item__title{
-    margin: 0;
-    word-break: break-all;
-}
+    .list-item--title{
+        margin: 0;
+        word-break: break-all;
+        color: $dark-grey;
+        text-decoration: none;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight:100;
+        font-size: 15px;
+    }
+    .list-item--note{
+        margin: 0;
+        word-break: break-all;
+        color: $dark-grey;
+        text-decoration: none;
+        padding-right: 30px;
+    }
 
-.list-item__sub-title{
-    color: $grey;
-    font-size: $font-size-small;
-}
-
-.list-item__data{
+    .list-item__sub-title{
+        color: $grey;
+        font-size: $font-size-small;
+    }
+    .list-item__data{
     margin: $s-size 0 0 0;
     @media(min-width: $desktop-breakpoint){
         margin: 0;
         padding-left: $s-size;
     }
+}
+.list-item:hover {
+    box-shadow: 0px 0px 15px 0px $teal;
+    border-color: $teal;
+    border-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+}
+
+.p3{
+    border-left-color: tomato;
+    border-top: 0px solid darken($off-white, 7%);
+    border-left-width: 10px;
+}
+
+.accordion-item{
+    width:100%;
+}
+.accordion-item:focus {outline:0;}
+.accordion-title:focus {outline:0;}
+.accordion-title{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+// .accordion-body{
+//     border-top: 0px solid darken($off-white, 7%);
+// }
+.accordion-column{
+    display:flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: space-between;
+}
+.accordon-row{
+    display:flex;
+    flex-direction: row;
+    align-items:left;
+    justify-content: space-between;
+}
+.accordion-left{
+    display:flex;
+    flex-direction: row;
+    align-items:left;
+    justify-content: space-between;
+}
+.accordion-right{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:right;
+}
+.accordion-border{
+    border-top: 1px solid darken($off-white, 7%);
+    width: 100%;
+    margin-top: 15px;
+}
+
+.accordion-body{
+    font-size: 13px;
+    font-weight: 100;
 }

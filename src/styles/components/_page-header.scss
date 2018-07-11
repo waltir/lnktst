@@ -1,16 +1,46 @@
 .page-header{
-    background: #f7f7f7;
+    background: $grayscale-gradient;
     margin-bottom: $l-size;
     padding: $l-size 0;
+    color: white;
+    margin-top:0px;
+    filter: grayscale(10%);
+    -webkit-filter: grayscale(10%);
+}
+.expense-header{
+    // height: 200px;
+    @media(max-width: $desktop-breakpoint){
+        height: 200px;
+    }
 }
 
-.page-header__title{
+h1.page-header__title{
     font-weight: 100;
-    margin: 0;
+    margin: 0px;
+    padding-top: 60px;
+    height:100px;
+    @media(max-width: $desktop-breakpoint){
+        padding-top: 45px;
+    }
     span{
         font-weight: 700;
     }
 }
 .page-header__actions{
     margin-top: $m-size;
+}
+.item-group > a.button{
+    border: 1px solid white;
+    background-color: transparent;
+}
+.item-group > a.button:hover{
+    color: $dark-blue;
+    background-color: white;
+}
+
+.expenseSummaryBtn{
+    margin-top: 70px;
+    @media(max-width: $desktop-breakpoint){
+        margin-top: 45px;
+    }
 }

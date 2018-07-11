@@ -13,6 +13,11 @@ body {
   line-height: 1.6;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 button {
   cursor: pointer;
 }
@@ -24,3 +29,75 @@ button:disabled {
 .is-active {
   font-weight: bold;
 }
+
+.margin-s{
+  margin: 10px;
+}
+.margin-m{
+  margin: 20px;
+}
+.margin-l{
+  margin: 30px;
+}
+
+.column{
+  display:flex;
+  flex-direction: column;
+  align-items:left;
+  justify-content: space-between;
+}
+.row{
+  display:flex;
+  flex-direction: row;
+  align-items:left;
+  justify-content: space-between;
+}
+.row-center{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:10px;
+}
+.float-left{
+  display:flex;
+  flex-direction: row;
+  align-items:left;
+  justify-content: flex-start;
+}
+.float-right{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items:right;
+}
+
+.display-none{
+  display: none;
+}
+
+.cell{
+  // background: linear-gradient(
+  //     rgba(54, 64, 81, 0.85), 
+  //     rgba(51, 51, 51, 0.45)
+  //   );
+  //   ,url('https://source.unsplash.com/2000x1500/?macbook'
+  width: 30rem;
+  text-align: center;
+}
+
+// .home-container{
+//   margin: 0 auto;
+//   padding: 0 $m-size;
+//   max-width: 90rem;
+//   width: 100vw;
+//   height:100vh;
+//   // display: flex;
+//   // flex-wrap: wrap;
+// }
+
+
+
+
+
+
+

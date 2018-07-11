@@ -8,8 +8,9 @@ export default class ExpenseForm extends React.Component {
 
     this.state = {
       description: props.expense ? props.expense.description : '',
+      link: props.expense ? props.expense.link : '',
       note: props.expense ? props.expense.note : '',
-      amount: props.expense ? (props.expense.amount / 100).toString() : '',
+      priority: props.priority ? props.expense.priority : '',
       createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
       calendarFocused: false,
       error: ''
@@ -19,16 +20,17 @@ export default class ExpenseForm extends React.Component {
     const description = e.target.value;
     this.setState(() => ({ description }));
   };
+  onLinkChange = (e) => {
+    const link = e.target.value;
+    this.setState(() => ({ link }));
+  };
   onNoteChange = (e) => {
     const note = e.target.value;
     this.setState(() => ({ note }));
   };
-  onAmountChange = (e) => {
-    const amount = e.target.value;
-
-    if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
-      this.setState(() => ({ amount }));
-    }
+  onPriorityChange = (e) => {
+    const priority = e.target.value;
+    this.setState(() => ({ priority }));
   };
   onDateChange = (createdAt) => {
     if (createdAt) {
@@ -41,13 +43,14 @@ export default class ExpenseForm extends React.Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    if (!this.state.description || !this.state.amount) {
-      this.setState(() => ({ error: 'Please provide description and amount.' }));
+    if (!this.state.description || !this.state.link) {
+      this.setState(() => ({ error: 'Please provide description and link.' }));
     } else {
       this.setState(() => ({ error: '' }));
       this.props.onSubmit({
         description: this.state.description,
-        amount: parseFloat(this.state.amount, 10) * 100,
+        link: this.state.link,
+        priority: this.state.priority,
         createdAt: this.state.createdAt.valueOf(),
         note: this.state.note
       });
@@ -66,12 +69,25 @@ export default class ExpenseForm extends React.Component {
             onChange={this.onDescriptionChange}
           />
 
-          <input 
-            type="text" className="text-input"
-            placeholder="Amount"
-            value={this.state.amount}
-            onChange={this.onAmountChange}
+          <input
+          type="text" className="text-input"
+          placeholder="Link - Note: Web urls should include https://"
+          value={this.state.link}
+          onChange={this.onLinkChange}
           />
+
+          <select className="select" defaultValue={this.state.priority}
+          onChange={this.onPriorityChange}>
+            <option value="p1">p1</option>
+            <option value="p2">p2</option>
+            <option value="p3">p3</option>
+            <option value="Urgent">Urgent</option>
+            <option value="Always">Always</option>
+            <option value="Never">Never</option>
+            <option value="Smoke Test">Sanity Test</option>
+            <option value="Smoke Test">Smoke Test</option>
+            <option value="Full Regression">Full Regression</option>
+          </select>
 
           <SingleDatePicker
             date={this.state.createdAt}
@@ -83,14 +99,14 @@ export default class ExpenseForm extends React.Component {
           />
 
           <textarea
-            placeholder="Add a note for your expense (optional)"
+            placeholder="Add a note for your link (optional)"
             className="textarea"
             value={this.state.note}
             onChange={this.onNoteChange}
           >
           </textarea>
           <div>
-            <button className="button">Submit</button>
+            <button className="header-button">Submit</button>
           </div>
         </form>
     )

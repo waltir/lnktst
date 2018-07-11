@@ -1,0 +1,37 @@
+.faqs-description{
+    font-weight: 600;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.faqs-item{
+    padding-left:5px;
+    cursor: pointer;
+}
+.faqs-title:focus{
+    outline:0;
+}
+.faqs-item-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 8px;
+}
+.faqs-body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:20px;
+    border: solid 7px lighten($color: $teal, $amount: 10%);
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    padding-left: 15px;
+    font-weight: 100;
+    line-height: 17px;
+    margin-top: -5px;
+    width: 550px;
+}
+.faqs-row{
+    font-weight: 100;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}

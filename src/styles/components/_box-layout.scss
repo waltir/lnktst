@@ -1,9 +1,10 @@
 .box-layout{
     align-items: center; 
-    background: linear-gradient(
-        rgba(54, 64, 81, 0.85), 
-        rgba(51, 51, 51, 0.45)
-      ),url('https://source.unsplash.com/2000x1500/?finance');
+    // background: linear-gradient(
+    //     rgba(54, 64, 81, 0.85), 
+    //     rgba(51, 51, 51, 0.45)
+    //   );
+    //   ,url('https://source.unsplash.com/2000x1500/?macbook'
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -13,13 +14,28 @@
     justify-content: center;
 }
 
+// .box-layout__button {
+//     box-shadow: 0px 0px 40px 10px rgba(30, 57, 92, 0.271);
+// }
+
 .box-layout__box{
-    background: fade-out(white, .20);
-    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    // background: fade-out(black, .80);
+    // background: linear-gradient(
+    //         rgba(75, 180, 241, 0.544), 
+    //         rgba(30, 57, 92, 0.871)
+    //       );
+    // border-radius: 8px;
     text-align: center;
     width: 30rem;
-    padding: $xl-size $xl-size;
-    box-shadow: 0px 0px 40px 10px rgba(54, 64, 81, 0.689);
+    // padding: $xl-size $xl-size;
+    // box-shadow: 0px 0px 40px 10px rgba(19, 46, 61, 0.644);
+    @media (min-width: $desktop-breakpoint) {
+        width: 50rem;
+        height: 25vh;
+        // margin-left: 50vw;
+    }
 }
 
 .box-layout__title{
@@ -27,9 +43,111 @@
     line-height: 1;
     font-weight:100;
     letter-spacing: 0px;
+    // font-style: italic;
+    font-size: 10rem;
+    letter-spacing: 0px;
+    font-family: 'Playfair Display', sans-serif;
+    color: white;
+    @media (min-width: $desktop-breakpoint) {
+        // padding-top:5vh;
+    }
+    @media (max-width: $desktop-breakpoint) {
+        font-size:6rem;
+        margin-bottom: -30px;
+    }
 }
 .box-layout__paragraph{
     font-weight:100;
     letter-spacing: 2px;
     font-size:15px;
+    padding: $l-size 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size:15px;
+}
+
+
+
+#video_overlays {
+    position:absolute;
+    float:left;
+    width:100%;
+    min-height:100%;
+    background: $video-gradient;
+    z-index:2;
+    object-fit: cover;
+    background-size: cover;
+    min-height:100vh !important;
+    min-width: 100vw;
+    // top: 0;
+    // margin-top: 25px;
+    // filter: grayscale(100%);
+    // -webkit-filter: grayscale(100%);
+}
+
+#myVideo {
+    position: fixed;
+    z-index: 0;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 100%;
+    // margin-top: 25px;
+    filter: grayscale(40%);
+    -webkit-filter: grayscale(40%);
+    width:100%;
+    min-height:100vh;
+    object-fit: cover;
+    background-size: cover;
+    max-height:100vh !important;
+    min-width: 100vw;
+}
+
+// video {
+//     object-fit: cover;
+//     max-height:100vh !important;
+//     min-width: 100vw;
+//     overflow: hidden;
+// }
+
+.screenshot{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.banner{
+    object-fit: cover;
+    max-height:200px;
+    min-width: 100vw;
+    overflow: hidden;
+    background: $grayscale-gradient;
+}
+.banner-content{
+    color: white;
+    padding: $l-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .button{
+        margin-left: 20px;
+        border-width: 1px;
+        border-color: white !important;
+        background-color: transparent;
+        border-radius: 0px;
+        border-style: solid;
+    }
+    .button:hover{
+        background-color: white;
+        color: $blue;
+    }
+}
+
+.box-bullets{
+    border-left: 25px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-color: $teal !important;
+    border-radius: 0px;
+    border-style: solid;
 }

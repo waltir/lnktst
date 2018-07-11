@@ -2,11 +2,13 @@
     background: $blue;
     padding: $s-size $l-size;
     color: white;
-    font-weight:100;
     border:none;
     display: inline-block;
     text-decoration: none;
     line-height: 1;
+    font-family: Helvetica;
+    font-size:14px;
+    font-weight:100;
 }
 .button:hover{
     background: darken($blue, 10%);
@@ -15,4 +17,70 @@
 
 .button--secondary{
     background: #888;
+}
+.button-group{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.button-outline{
+    background: transparent;
+    padding: $s-size $l-size;
+    color: $teal;
+    border: 1px solid $teal;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    font-family: Helvetica;
+    font-size:12px;
+    font-weight:100;
+}
+.button-outline:hover{
+    background: $teal;
+    color: white;
+    transition: background .3s ease-in-out;
+}
+.button-outline-white{
+    background: transparent;
+    padding: $s-size $l-size;
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    font-family: Helvetica;
+    font-size:12px;
+    font-weight:100;
+}
+.button-outline-white:hover{
+    background: white;
+    color: $dark-blue;
+    transition: background .3s ease-in-out;
+}
+
+.header-button{
+    background: transparent;
+    padding: $s-size $l-size;
+    border: 1px solid $dark-grey;
+    color: $dark-grey;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    font-family: Helvetica;
+    font-size:12px;
+    font-weight:100;
+}
+.header-button:hover{
+    background: darken($color: $teal, $amount: 5%);
+    color: white;
+    transition: background .3s ease-in-out;
+    border-color: darken($color: $teal, $amount: 5%);
+}
+
+.fa{
+    color: $teal;
+    .fa:hover{
+        color: darken($color: $teal, $amount: 10%);
+    }
 }

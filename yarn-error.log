@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js test -- --watch
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js add gdpr-cookie-monster
 
 PATH: 
   /Users/walterlyons/.rbenv/shims:/Users/walterlyons/.rbenv/shims:/Users/walterlyons/.rvm/gems/ruby-2.5.0/bin:/Users/walterlyons/.rvm/gems/ruby-2.5.0@global/bin:/Users/walterlyons/.rvm/rubies/ruby-2.5.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/walterlyons/.rvm/bin
@@ -34,24 +34,30 @@ npm manifest:
       "babel-loader": "^7.1.4",
       "babel-plugin-transform-class-properties": "6.24.1",
       "babel-plugin-transform-object-rest-spread": "6.23.0",
+      "babel-polyfill": "6.26.0",
       "babel-preset-env": "1.5.2",
       "babel-preset-react": "6.24.1",
       "css-loader": "^0.28.4",
       "express": "4.15.4",
       "extract-text-webpack-plugin": "3.0.0",
       "firebase": "^5.0.4",
+      "gmail-send": "^1.2.14",
+      "history": "4.7.2",
+      "jquery": "^3.3.1",
       "live-server": "^1.2.0",
       "moment": "2.18.1",
       "node-sass": "4.5.3",
       "normalize.css": "7.0.0",
       "numeral": "2.0.6",
       "react": "16.0.0",
+      "react-accessible-accordion": "^2.4.2",
       "react-addons-shallow-compare": "15.6.0",
       "react-dates": "12.7.0",
       "react-dom": "16.0.0",
       "react-modal": "2.2.2",
       "react-redux": "5.0.5",
       "react-router-dom": "4.2.2",
+      "react-script-tag": "^1.1.2",
       "redux": "3.7.2",
       "redux-mock-store": "1.2.3",
       "redux-thunk": "2.2.0",
@@ -1091,7 +1097,7 @@ Lockfile:
       babel-runtime "^6.22.0"
       babel-types "^6.24.1"
   
-  babel-polyfill@^6.23.0:
+  babel-polyfill@6.26.0, babel-polyfill@^6.23.0:
     version "6.26.0"
     resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
     dependencies:
@@ -1958,6 +1964,10 @@ Lockfile:
       parseurl "~1.3.1"
       utils-merge "1.0.0"
   
+  consecutive@^5.0.4:
+    version "5.0.4"
+    resolved "https://registry.yarnpkg.com/consecutive/-/consecutive-5.0.4.tgz#45d26d4604f551e5a6db477f9d799bec33a2f005"
+  
   console-browserify@^1.1.0:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/console-browserify/-/console-browserify-1.1.0.tgz#f0241c45730a9fc6323b206dbf38edc741d0bb10"
@@ -2062,6 +2072,10 @@ Lockfile:
       fbjs "^0.8.9"
       loose-envify "^1.3.1"
       object-assign "^4.1.1"
+  
+  create-react-context@^0.1.5:
+    version "0.1.6"
+    resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.1.6.tgz#0f425931d907741127acc6e31acb4f9015dd9fdc"
   
   cross-env@5.0.5:
     version "5.0.5"
@@ -3382,6 +3396,13 @@ Lockfile:
       lodash "~4.17.4"
       minimatch "~3.0.2"
   
+  gmail-send@^1.2.14:
+    version "1.2.14"
+    resolved "https://registry.yarnpkg.com/gmail-send/-/gmail-send-1.2.14.tgz#2fd20a0270197be46f8f2633ea34f9410dec01b1"
+    dependencies:
+      lodash "^4.17.5"
+      nodemailer "^4.6.4"
+  
   got@^7.0.0:
     version "7.1.0"
     resolved "https://registry.yarnpkg.com/got/-/got-7.1.0.tgz#05450fd84094e6bbea56f451a43a9c289166385a"
@@ -3563,7 +3584,7 @@ Lockfile:
       hoek "4.x.x"
       sntp "2.x.x"
   
-  history@^4.7.2:
+  history@4.7.2, history@^4.7.2:
     version "4.7.2"
     resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
     dependencies:
@@ -4466,6 +4487,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/jest/-/jest-20.0.4.tgz#3dd260c2989d6dad678b1e9cc4d91944f6d602ac"
     dependencies:
       jest-cli "^20.0.4"
+  
+  jquery@^3.3.1:
+    version "3.3.1"
+    resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
   
   js-base64@^2.1.8, js-base64@^2.1.9:
     version "2.4.3"
@@ -5409,6 +5434,10 @@ Lockfile:
       request "^2.79.0"
       sass-graph "^2.1.1"
       stdout-stream "^1.4.0"
+  
+  nodemailer@^4.6.4:
+    version "4.6.6"
+    resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-4.6.6.tgz#9ba4be51ffa5da2b2dbc392b87e30bff7166e139"
   
   nomnom@^1.8.1:
     version "1.8.1"
@@ -6393,6 +6422,14 @@ Lockfile:
       minimist "^1.2.0"
       strip-json-comments "~2.0.1"
   
+  react-accessible-accordion@^2.4.2:
+    version "2.4.2"
+    resolved "https://registry.yarnpkg.com/react-accessible-accordion/-/react-accessible-accordion-2.4.2.tgz#4f231a012c4f6020f83cbd3ffcb9b578eea22244"
+    dependencies:
+      classnames "^2.2.5"
+      consecutive "^5.0.4"
+      unstated "^2.1.1"
+  
   react-addons-shallow-compare@15.6.0:
     version "15.6.0"
     resolved "https://registry.yarnpkg.com/react-addons-shallow-compare/-/react-addons-shallow-compare-15.6.0.tgz#b7a4e5ff9f2704c20cf686dd8a05dd08b26de252"
@@ -6486,6 +6523,10 @@ Lockfile:
       path-to-regexp "^1.7.0"
       prop-types "^15.5.4"
       warning "^3.0.0"
+  
+  react-script-tag@^1.1.2:
+    version "1.1.2"
+    resolved "https://registry.yarnpkg.com/react-script-tag/-/react-script-tag-1.1.2.tgz#be0fa3a22dfae8165d083f6bc1ff6f9799b20d44"
   
   react-test-renderer@15.6.1:
     version "15.6.1"
@@ -7711,6 +7752,12 @@ Lockfile:
       has-value "^0.3.1"
       isobject "^3.0.0"
   
+  unstated@^2.1.1:
+    version "2.1.1"
+    resolved "https://registry.yarnpkg.com/unstated/-/unstated-2.1.1.tgz#36b124dfb2e7a12d39d0bb9c46dfb6e51276e3a2"
+    dependencies:
+      create-react-context "^0.1.5"
+  
   untildify@^3.0.2:
     version "3.0.2"
     resolved "https://registry.yarnpkg.com/untildify/-/untildify-3.0.2.tgz#7f1f302055b3fea0f3e81dc78eb36766cb65e3f1"
@@ -8290,17 +8337,14 @@ Lockfile:
       yeoman-environment "^2.0.5"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: sh
-  Arguments: -c cross-env NODE_ENV=test jest --config=jest.config.json --watch
-  Directory: /Users/walterlyons/Desktop/React/expensify-app
-  Output:
-  
-      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
-      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:30281:17)
-      at emitTwo (events.js:126:13)
-      at ChildProcess.emit (events.js:214:7)
-      at maybeClose (internal/child_process.js:925:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+  Error: No valid versions found for "gdpr-cookie-monster". The package may be unpublished.
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at Function.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:51415:15)
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:23451:28)
+      at Function.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:95:12)
+      at Function.findVersionInRegistryResponse (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:51461:19)
+      at NpmResolver.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:51479:28)
