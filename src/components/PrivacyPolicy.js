@@ -14,7 +14,7 @@ const PrivacyPolicy = () => (
   </div>
   <Grid fluid style={{marginTop: '-35px', marginLeft: '-16px', marginBottom: '0px'}}>
     <Row>
-      <Col xs={12} lg={12}><img width="100%" height="400px" style={{width: 'auto', minWidth: '100vw', overflow: 'hidden', filter: 'grayscale(100%)', webkitFilter: 'grayscale(100%)'}} src="https://source.unsplash.com/2000x400/?sf,bay"/>
+      <Col xs={12} lg={12}><img width="100%" height="250px" style={{width: 'auto', minWidth: '100vw', overflow: 'hidden', filter: 'grayscale(100%)', webkitFilter: 'grayscale(100%)'}} src="https://source.unsplash.com/2000x400/?sf,bay"/>
       </Col>
     </Row>
   </Grid>

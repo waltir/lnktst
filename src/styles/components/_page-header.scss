@@ -1,11 +1,11 @@
 .page-header{
-    background: $grayscale-gradient;
+    background: $gradient;
     margin-bottom: $l-size;
     padding: $l-size 0;
     color: white;
     margin-top:0px;
-    filter: grayscale(10%);
-    -webkit-filter: grayscale(10%);
+    // filter: grayscale(10%);
+    // -webkit-filter: grayscale(10%);
 }
 .expense-header{
     // height: 200px;

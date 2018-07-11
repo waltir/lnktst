@@ -28,7 +28,7 @@ const AppRouter = () => (
         <PrivateRoute path="/create" component={AddExpensePage} />
         <PrivateRoute path="/edit/:id" component={EditExpensePage} />
         <PrivateRoute path="/profile" component={ProfilePage} />
-        <Route path="/faqs" component={FAQsPage} />
+        <PublicRoute path="/faqs" component={FAQsPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/privacy" component={PrivacyPolicy} />

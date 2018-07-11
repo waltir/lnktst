@@ -1,8 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link, Route, Redirect} from 'react-router-dom';
 import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
 import ResponsiveMenu from 'react-responsive-navbar';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemTitle,
+  AccordionItemBody,
+} from 'react-accessible-accordion';
 
 export const Header = ({startLogout}) => (
   <div className="header-container">

@@ -26,7 +26,7 @@ export class ContactPage extends React.Component {
               <h1 className="page-header__title">Contact</h1>
             </div>
           </div>
-        <div className="content-container">
+        <div className="content-container" style={{marginTop: '0px', marginBottom: '150px'}}>
           <a href="" id="mailto"></a>
             <form onSubmit={this.onContact} className="form" style={{marginTop: '70px'}}>
               <input
